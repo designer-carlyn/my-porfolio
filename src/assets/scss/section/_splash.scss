@@ -1,0 +1,47 @@
+@use "../utils/_index.scss" as *;
+
+.home {
+    &__splash {
+        background-image: url(~@/assets/image/splash_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        .splash-content {
+            min-height: 90vh;
+            @include flex-item(flex-start);
+
+            .splash-info {
+                margin-right: auto;
+
+                h1 {
+                    font-size: 60px;
+                    line-height: 90px;
+
+                    span {
+                        color: $s-color;
+                        text-decoration: underline;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                    color: $t-color;
+                    max-width: 450px;
+                    font-weight: 500;
+                    margin: 30px 0 35px;
+                }
+
+                .splash-button {
+                    .btn-custom {
+                        margin-right: 20px;
+                    }
+                }
+            }
+
+            .splash-image {
+                margin-left: auto;
+            }
+        }
+    }
+}

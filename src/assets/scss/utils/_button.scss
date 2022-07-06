@@ -1,0 +1,36 @@
+@use  './_color.scss' as *;
+@use  './_mixins.scss' as *;
+
+.btn-custom {
+    background: $p-color !important;
+    border: 1px solid $p-color;
+    color: $p-text !important;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    @include transition(0.15s);
+
+    &:hover {
+        background: $p-light !important;
+        color: $p-color !important;
+        @include transition(0.15s);
+    }
+}
+
+.btn-custom-light {
+    background: $p-light !important;
+    border: 1px solid $p-color;
+    color: $p-color !important;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    @include transition(0.15s);
+
+    &:hover {
+        background: $p-color !important;
+        color: $p-text !important;
+        @include transition(0.15s);
+    }
+}

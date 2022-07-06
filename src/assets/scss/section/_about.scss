@@ -1,0 +1,42 @@
+@use "../utils/_index.scss" as *;
+
+.about {
+    background: #f4f4f4;
+    padding: 120px 0;
+    
+    &__row {
+        .about-image {
+            background: linear-gradient(to bottom, $s-color, #f4f4f4 67.59%);
+            padding: 2px;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            max-width: 450px;
+            margin: auto;
+            
+            .about-image-inner {
+                background: $c-white;
+                height: 550px;
+                max-width: 450px;
+                border-radius: $border-radius;
+                overflow: hidden;
+            }
+        }
+
+        .about-info {
+            padding: 0 30px;
+
+            h1 {
+                font-weight: 600;
+                line-height: 35px;
+                color: $t-color;
+                font-size: 28px;
+            }
+
+            p {
+                color: $paragraph;
+                margin: 20px 0 30px;
+                line-height: 26px;
+            }
+        }
+    }
+}
