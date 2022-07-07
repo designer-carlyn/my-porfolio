@@ -3,4 +3,127 @@
 .portfolio {
     background: #f4f4f4;
     padding: 120px 0;
+
+    &-slider {
+        margin-top: 70px;
+        position: relative;
+        
+        .swiper-container {
+            min-height: 400px;
+            padding: 5px 10px 10px;
+
+            .slide-container {
+                overflow: hidden;
+                border-radius: $border-radius;
+                box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+
+                .slide-image {
+                    border-radius: $border-radius;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        width: 100%;
+                        border-radius: $border-radius;
+                        display: flex;
+                    }
+
+                    .slide-action {
+                        position: absolute;
+                        background: rgba(0,0,0,0.6);
+                        z-index: 999;
+                        height: 100%;
+                        width: 100%;
+                        top: 0;
+                        @include flex-item(center);
+                        transform: scale(0);
+                        @include transition(0.15s);
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        .v-btn {
+                            border-radius: 50px;
+                            min-width: 50px !important;
+                            height: 50px !important;
+                            padding: 10px;
+                            margin: 0 20px;
+                            background: $s-light;
+                            border: 1px solid $s-color;
+
+                            .v-icon {
+                                color: $s-color;
+                            }
+
+                            &:hover {
+                                background: $s-color;
+
+                                .v-icon {
+                                    color: $c-white;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        .slide-action {
+                            transform: scale(1);
+                            @include transition(0.2s);
+                        }
+                    }
+                }
+            }
+        }
+
+        .navigation {
+            &-button {
+                border: 2px solid $s-color;
+                width: 70px;
+                height: 70px;
+                border-radius: 50px;
+                @include flex-item(center);
+                background: transparent;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                z-index: 99;
+                transform: translateY(-50%);
+
+                .v-icon {
+                    color: $s-color;
+                    font-size: 20px;
+                }
+
+                &:hover {
+                    background: $s-color;
+                    
+                    .v-icon {
+                        color: $c-white;
+                    }
+                }
+
+                &.swiper-button-disabled {
+                    opacity: 0.35;
+
+                    &:hover {
+                        background: transparent;
+                        border: 2px solid $s-color;
+
+                        .v-icon {
+                            color: $s-color;
+                        }
+                    }
+                }
+            }
+
+            &-prev-project {
+                left: -80px;
+            }
+
+            &-next-project {
+                right: -80px;
+            }
+        }
+    }
 }
