@@ -3,6 +3,7 @@
       <Splash></Splash>
       <About></About>
       <Expertise></Expertise>
+      <Portfolio></Portfolio>
     </div>
 </template>
 
@@ -10,6 +11,7 @@
   import Splash from '@/components/Splash.vue'
   import About from '@/components/About.vue'
   import Expertise from '@/components/Expertise.vue'
+  import Portfolio from '@/components/Portfolio.vue'
 
   export default {
     name: 'Home',
@@ -18,6 +20,7 @@
       Splash,
       About,
       Expertise,
+      Portfolio,
     },
   }
 </script>

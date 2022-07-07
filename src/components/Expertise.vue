@@ -3,13 +3,13 @@
         <v-container>
             <div class="expertise__row">
                 <v-row>
-                    <v-col class="d-flex align-center" cols="12" xl="4" lg="4" md="4" sm="12" xs="12">
+                    <v-col class="d-flex align-center" cols="12" xl="5" lg="5" md="5" sm="12" xs="12">
                         <div class="expertise-info">
-                            <h1 class="section-title">My expertise area</h1>
+                            <h1 class="section-title">My expertise <br> area</h1>
                             <p>I'm knowledgeable in different tools and frameworks until now that I can apply in creating webpage, mockups and website templates.</p>
                         </div>
                     </v-col>
-                    <v-col cols="12" xl="8" lg="8" md="8" sm="12" xs="12">
+                    <v-col cols="12" xl="7" lg="7" md="7" sm="12" xs="12">
                         <div class="expertise-content">
                             <div class="expertise-tab">
                                 <div class="tab-link">
@@ -127,7 +127,7 @@
                     position: 'Programmer'
                 },
                 {
-                    date: '2020 (Jan) - 2020 (Jan)',
+                    date: '2020 (Jan) - 2022 (Jan)',
                     company: 'MPOTECH Digital System Inc.',
                     position: 'Web Developer'
                 },
