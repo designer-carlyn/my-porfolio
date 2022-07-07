@@ -2,17 +2,61 @@
 
 .contact {
     background: #ffffff;
-    padding: 40px;
+    padding: 20px 0 0;
+    position: relative;
 
     &__form {
         border-radius: $border-radius;
-        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
-        padding: 60px;
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+        padding: 50px;
+        position: relative;
+        background: #ffffff;
 
         .contact-info {
             display: grid;
             grid-gap: 20px;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 30px;
+
+            .info-item {
+                @include flex-item(flex-start);
+
+                .icon {
+                    margin-right: 20px;
+                    img {
+                        display: flex;
+                        width: 100%;
+                    }
+                }
+
+                .content {
+                    h4 {
+                        font-weight: 500;
+                        color: $paragraph;
+                        margin-bottom: 5px;
+                    }
+                    h3 {
+                        color: $t-color;
+                    }
+                }
+            }
         }
+
+        .contact-map {
+            margin-top: 40px;
+            background: #f4f4f4;
+            min-height: 400px;
+            @include flex-item(center);
+        }
+    }
+
+    &:before {
+        content: '';
+        background: $t-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 180px;
+        width: 100%;
     }
 }

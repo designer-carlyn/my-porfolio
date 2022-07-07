@@ -23,6 +23,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="contact-map">
+                    <div class="map-icon">
+                        <img src="@/assets/image/icons/contact-map.png" alt="">
+                    </div>
+                </div>
             </div>
         </v-container>
     </div>
