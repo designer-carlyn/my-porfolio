@@ -4,5 +4,117 @@
     background: #ffffff;
     padding: 120px 0;
     
-    
+    &__row {
+        .expertise-info {
+            p {
+                color: $paragraph;
+                margin: 20px 0;
+                line-height: 28px;
+            }
+        }
+
+        .expertise-content {
+            .expertise-tab {
+                .tab-link {
+                    @include flex-item(center);
+                    margin-bottom: 40px;
+
+                    .v-btn {
+                        margin: 0 10px;
+                        min-width: 180px;
+
+                        &.active {
+                            background: $p-color !important;
+                            color: $p-text !important;
+                        }
+                    }
+                }
+
+                .tab-content {
+                    padding: 0 20px 0 90px;
+                    min-height: 400px;
+
+                    .skills-content {
+                        .skills-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                            grid-gap: 20px;
+
+                            .item {
+                                .name {
+                                    color: $t-color;
+                                }
+                            }
+                        }
+                    }
+
+                    .experience-content {
+                        .experience-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                            grid-gap: 20px;
+
+                            .item-date {
+                                color: $p-color;
+                                font-size: 18px;
+                            }
+
+                            .item-company {
+                                color: $paragraph;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-top: 2px;
+                            }
+
+                            .item-divider {
+                                width: 40px;
+                                height: 3px;
+                                background: $t-color;
+                                margin: 10px 0 5px;
+                            }
+
+                            .item-position {
+                                font-size: 20px;
+                                color: $t-color;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+
+                    .education-content {
+                        .education-grid {
+                            display: grid;
+                            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                            grid-gap: 20px;
+
+                            .item-date {
+                                color: $p-color;
+                                font-size: 18px;
+                            }
+
+                            .item-school {
+                                color: $paragraph;
+                                font-size: 18px;
+                                font-weight: 500;
+                                margin-top: 2px;
+                            }
+
+                            .item-divider {
+                                width: 40px;
+                                height: 3px;
+                                background: $t-color;
+                                margin: 10px 0 5px;
+                            }
+
+                            .item-course {
+                                font-size: 20px;
+                                color: $t-color;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

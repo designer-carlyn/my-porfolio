@@ -1,0 +1,19 @@
+@use './_color.scss' as *;
+
+.section-title {
+    font-size: 50px;
+    color: $t-color;
+    font-weight: 700;
+    line-height: 60px;
+    position: relative;
+
+    &:after {
+        content: '';
+        height: 2px;
+        background: $t-color;
+        width: 80px;
+        position: absolute;
+        bottom: 10px;
+        margin-left: 15px;
+    }
+}

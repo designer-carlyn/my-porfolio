@@ -31,7 +31,7 @@
                     </v-col>
                     <v-col class="d-flex align-center" cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
                         <div class="about-info">
-                            <h1>Professional Web Designer and Front End Developer</h1>
+                            <h1 class="section-title">About Me</h1>
                             <p>With 3 years’ worth of experience as a passionate and dedicated web designer and front-end developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
                             <v-btn class="btn-custom" x-large>Download CV <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
                         </div>
