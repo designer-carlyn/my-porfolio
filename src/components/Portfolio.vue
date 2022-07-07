@@ -2,6 +2,7 @@
     <div class="portfolio">
         <v-container>
             <div class="portfolio__content">
+                <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
                 <h1 class="section-title">Look at my <br> recent projects</h1>
                 <div class="portfolio-slider">
                     <div class="swiper-container">
@@ -16,7 +17,7 @@
                                             <router-link :to="item.demoLink" v-if="item.hasDemo">
                                                 <v-btn x-large><v-icon>fas fa-external-link-alt</v-icon></v-btn>
                                             </router-link>
-                                            <v-btn x-large><v-icon>fas fa-eye</v-icon></v-btn>
+                                            <v-btn x-large @click="index = i"><v-icon>fas fa-eye</v-icon></v-btn>
                                         </div>
 									</div>
 								</div>
@@ -51,25 +52,69 @@
 
         data() {
             return {
-                demoLink: true,
                 projectItem: [{
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/shop_online_store_NZD5Tzy8P.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657169039669',
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/shop_online_store_NZD5Tzy8P.jpg',
                     demoLink: '',
-                    viewImage: '',
                     hasDemo: true,
                 },
                 {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/cikay_n3sFeXIW9.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657169041402',
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/cikay_n3sFeXIW9.jpg',
                     demoLink: '',
-                    viewImage: '',
                     hasDemo: true,
                 },
                 {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_QsFgVzPITD.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657169041216',
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_QsFgVzPITD.jpg',
                     demoLink: '',
-                    viewImage: '',
                     hasDemo: false,
-                },]
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/up_speed_KlGpGC8Av.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup1_Nta3mFqnG2.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard1_KQgW7v4b2.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/tru_vital_9GUq5kKtm.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/success_community_G3axTULS_.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/delex_C7onziCsN.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },
+                {
+                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup2_ypTxQNfKb.jpg',
+                    demoLink: '',
+                    hasDemo: false,
+                },],
+                items: [
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/shop_online_store_NZD5Tzy8P.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/cikay_n3sFeXIW9.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_QsFgVzPITD.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/up_speed_KlGpGC8Av.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup1_Nta3mFqnG2.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard1_KQgW7v4b2.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/tru_vital_9GUq5kKtm.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/success_community_G3axTULS_.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/delex_C7onziCsN.jpg',
+                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup2_ypTxQNfKb.jpg',
+                ],
+                index: null,
             }
         },
 
@@ -79,7 +124,7 @@
                 slidesPerView: 2,
                 spaceBetween: 30,
                 autoplay: {
-                    delay: 3000,
+                    delay: 5000,
                 },
 				navigation: {
 					nextEl: '.navigation-next-project',
