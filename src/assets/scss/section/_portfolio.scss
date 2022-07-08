@@ -77,6 +77,8 @@
         }
 
         .navigation {
+            @include flex-item(center);
+
             &-button {
                 border: 2px solid $s-color;
                 width: 70px;
@@ -85,10 +87,7 @@
                 @include flex-item(center);
                 background: transparent;
                 cursor: pointer;
-                position: absolute;
-                top: 50%;
-                z-index: 99;
-                transform: translateY(-50%);
+                margin: 10px;
 
                 .v-icon {
                     color: $s-color;
