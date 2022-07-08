@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <Header></Header>
+    <HeaderMobile v-if="isMobile"></HeaderMobile>
+    <Header v-else></Header>
     <v-main>
       <router-view />
     </v-main>
@@ -9,7 +10,9 @@
 </template>
 
 <script>
+  import { isMobile } from 'mobile-device-detect'
   import Header from '@/layout/Header.vue'
+  import HeaderMobile from '@/layout/HeaderMobile.vue'
   import Footer from '@/layout/Footer.vue'
 
   export default {
@@ -17,12 +20,15 @@
 
     components: {
       Header,
-      Footer
+      Footer,
+      HeaderMobile
     },
 
-    data: () => ({
-      //
-    }),
+    data() {
+      return {
+        isMobile: isMobile,
+      }
+    }
   };
 </script>
 

@@ -1,0 +1,113 @@
+@use "../utils/_index.scss" as *;
+
+.header-mobile {
+    font-family: 'Inter', sans-serif;
+    background: $h-color;
+    color: $h-text;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+    position: sticky;
+    top: -1px;
+    z-index: 99;
+
+    &__cont {
+        @include flex-item(flex-start);
+
+        .header-mobile-logo {
+            img {
+                width: 180px;
+                display: flex;
+            }
+        }
+
+        .header-mobile-hamburger {
+            margin-left: auto;
+            position: relative;
+
+            .hamburger-lines {
+                width: 40px;
+                height: 4px;
+                border-radius: 50px;
+                background: $t-color;
+
+                &:after {
+                    content: '';
+                    height: 4px;
+                    width: 60%;
+                    top: -10px;
+                    position: absolute;
+                    background: $t-color;
+                    border-radius: 50px;
+                }
+
+                &:before {
+                    content: '';
+                    height: 4px;
+                    width: 60%;
+                    bottom: -10px;
+                    right: 0;
+                    position: absolute;
+                    background: $t-color;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    .sidenav {
+        width: 90px;
+        height: 100%;
+        background: $t-color;
+        border-radius: 10px 0 0 10px;
+        position: fixed;
+        right: -90px;
+        top: 0;
+        padding: 20px;
+        @include flex-item(center);
+        flex-direction: column;
+        z-index: 999;
+        @include transition(0.2s);
+
+        &-item {
+            background: $s-light;
+            border-radius: 10px 0 10px;
+            margin-bottom: 35px;
+            height: 50px;
+            @include flex-item(center);
+            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+
+            .v-icon {
+                color: $s-color;
+                width: 27px;
+                height: 24px;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        &.active {
+            right: 0;
+            @include transition(0.2s);
+        }
+    }
+
+    .overlay {
+        background: rgba(0,0,0,0.7);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: scale(0);
+        @include transition(0.2s);
+
+        &.active {
+            transform: scale(1);
+            @include transition(0.2s);
+        }
+    }
+}

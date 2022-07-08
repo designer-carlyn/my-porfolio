@@ -130,6 +130,14 @@
 					nextEl: '.navigation-next-project',
 					prevEl: '.navigation-prev-project',
 				},
+                breakpoints: {
+                        1280: {
+                            slidesPerView: 2,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                        },
+                    }
 			},);
         }
     }
