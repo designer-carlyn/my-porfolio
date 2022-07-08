@@ -1,5 +1,5 @@
 <template>
-    <div class="contact">
+    <div class="contact" id="contact">
         <v-container>
             <div class="contact__form">
                 <div class="section-title">Let's keep <br> in touch</div>

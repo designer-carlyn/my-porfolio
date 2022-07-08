@@ -1,5 +1,5 @@
 <template>
-    <div class="expertise">
+    <div class="expertise" id="expertise">
         <v-container>
             <div class="expertise__row">
                 <v-row>

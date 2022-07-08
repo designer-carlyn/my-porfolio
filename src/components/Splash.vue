@@ -1,5 +1,5 @@
 <template>
-    <div class="home__splash">
+    <div class="home__splash" id="splash">
         <v-container>
             <div class="splash-content">
                 <div class="splash-info">

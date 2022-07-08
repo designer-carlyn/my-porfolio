@@ -6,18 +6,21 @@
                     <img src="@/assets/image/logo_header.png" alt="">
                 </div>
                 <div class="header-link">
-                    <router-link to="#">
+                    <a href="#splash" v-smooth-scroll>
                         <div class="link-item">HOME</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#about" v-smooth-scroll>
                         <div class="link-item">ABOUT</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#expertise" v-smooth-scroll>
+                        <div class="link-item">EXPERTISE</div>
+                    </a>
+                    <a href="#portfolio" v-smooth-scroll>
                         <div class="link-item">PORTFOLIO</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#contact" v-smooth-scroll>
                         <div class="link-item">CONTACT</div>
-                    </router-link>
+                    </a>
                 </div>
                 <div class="header-button">
                     <v-btn class="btn-custom" x-large>Resume <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>

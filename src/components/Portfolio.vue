@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <v-container>
             <div class="portfolio__content">
                 <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
