@@ -1,0 +1,44 @@
+@use "../utils/_index.scss" as *;
+
+.footer {
+    background: $f-color;
+    color: $f-text;
+    padding: 80px 0;
+
+    &__cont {
+        @include flex-item(flex-start);
+
+        .footer-logo {
+            img {
+                width: 100%;
+            }
+        }
+
+        .footer-nav {
+            margin: 0 auto;
+            @include flex-item(center);
+
+            a {
+                text-decoration: none;
+                color: $paragraph;
+                font-weight: 600;
+            }
+
+            .nav-item {
+                margin: 0 15px;
+
+                &:hover {
+                    color: $s-color;
+                }
+            }
+        }
+
+        .footer-trademark {
+            h4 {
+                color: #b9b9b9;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
