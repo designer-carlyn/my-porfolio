@@ -5,6 +5,8 @@ import vuetify from './plugins/vuetify'
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 import VueSmoothScroll from 'vue2-smooth-scroll'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 Vue.config.productionTip = false
 
@@ -13,6 +15,8 @@ Vue.use(VueSmoothScroll, {
   duration: 800,
   offset: -75,
 })
+// Vue.use(AOS)
+AOS.init();
 
 new Vue({
   router,
