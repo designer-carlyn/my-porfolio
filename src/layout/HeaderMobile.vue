@@ -3,7 +3,7 @@
         <v-container>
             <div class="header-mobile__cont">
                 <div class="header-mobile-logo">
-                    <img src="@/assets/image/logo_header.png" alt="">
+                    <img src="@/assets/image/logo.svg" alt="">
                 </div>
                 <div class="header-mobile-hamburger" @click="openSidenav()">
                     <div class="hamburger-lines"></div>

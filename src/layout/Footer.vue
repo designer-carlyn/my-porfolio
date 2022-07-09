@@ -3,7 +3,7 @@
         <v-container>
             <div class="footer__cont">
                 <div class="footer-logo">
-                    <img src="@/assets/image/logo_footer.png" alt="">
+                    <img src="@/assets/image/logo_footer.svg" alt="">
                 </div>
                 <div class="footer-nav">
                     <a href="#splash" v-smooth-scroll>

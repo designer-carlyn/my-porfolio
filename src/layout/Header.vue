@@ -3,7 +3,7 @@
         <v-container>
             <div class="header__cont">
                 <div class="header-logo">
-                    <img src="@/assets/image/logo_header.png" alt="">
+                    <img src="@/assets/image/logo.svg" alt="">
                 </div>
                 <div class="header-link">
                     <a href="#splash" v-smooth-scroll>
