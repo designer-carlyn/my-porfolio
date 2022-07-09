@@ -6,9 +6,9 @@
                     <v-col cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
                         <div class="about-image">
                             <div class="about-image-inner">
-                                <img src="@/assets/image/about_placeholder.jpg" alt="">
+                                <img class="profile-img" src="@/assets/image/about_placeholder.jpg" alt="">
 
-                                <div class="follow-me">
+                                <!-- <div class="follow-me">
                                     <h4>Follow me on Social Media</h4>
                                     <router-link to="#">
                                         <div class="social-link">
@@ -25,7 +25,7 @@
                                             <img src="" alt="">
                                         </div>
                                     </router-link>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </v-col>

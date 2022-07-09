@@ -9,7 +9,6 @@
         position: relative;
         
         .swiper-container {
-            min-height: 400px;
             padding: 5px 10px 10px;
 
             .slide-container {
@@ -122,6 +121,18 @@
 
             &-next-project {
                 right: -80px;
+            }
+        }
+    }
+
+    @include sm {
+        padding: 70px 0 !important;
+
+        &-slider {
+            margin-top: 30px !important;
+
+            .swiper-container {
+                min-height: 100% !important;
             }
         }
     }

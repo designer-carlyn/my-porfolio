@@ -41,4 +41,25 @@
             }
         }
     }
+
+    @include sm {
+        padding-top: 60px !important;
+
+        &__cont {
+            justify-content: center;
+
+            .footer-nav {
+                margin: 20px auto !important;
+
+                .nav-item {
+                    margin: 5px 10px;
+                    font-size: 14px;
+                }
+            }
+
+            .footer-trademark {
+                margin-top: 5px;
+            }
+        }
+    }
 }

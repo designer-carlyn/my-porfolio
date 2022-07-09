@@ -48,5 +48,27 @@
                 }
             }
         }
+
+        @include sm {
+            .splash-info {
+                text-align: center;
+                margin-left: auto;
+
+                h1 {
+                    font-size: 35px !important;
+                    line-height: 40px !important;
+                }
+
+                p {
+                    font-size: 16px !important;
+                    color: $paragraph !important;
+                }
+            }
+
+            .splash-image {
+                margin-right: auto;
+                margin-top: 15px;
+            }
+        }
     }
 }

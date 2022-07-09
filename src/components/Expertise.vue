@@ -5,7 +5,7 @@
                 <v-row>
                     <v-col class="d-flex align-center" cols="12" xl="5" lg="5" md="5" sm="12" xs="12">
                         <div class="expertise-info">
-                            <h1 class="section-title">My expertise <br> area</h1>
+                            <h1 class="section-title">My skills <br> is my power</h1>
                             <p>I'm knowledgeable in different tools and frameworks until now that I can apply in creating webpage, mockups and website templates.</p>
                         </div>
                     </v-col>
@@ -13,7 +13,7 @@
                         <div class="expertise-content">
                             <div class="expertise-tab">
                                 <div class="tab-link">
-                                    <v-btn v-model="skills" class="btn-custom-light" :class="{ active: skills }" @click="showSkills()" x-large>Skills & Tools <v-icon class="ml-3" small>fas fa-code</v-icon></v-btn>
+                                    <v-btn v-model="skills" class="btn-custom-light" :class="{ active: skills }" @click="showSkills()" x-large>Expertise <v-icon class="ml-3" small>fas fa-code</v-icon></v-btn>
                                     <v-btn v-model="experience" class="btn-custom-light" :class="{ active: experience }" @click="showExperience()" x-large>Experience <v-icon class="ml-3" small>fas fa-briefcase</v-icon></v-btn>
                                     <v-btn v-model="education" class="btn-custom-light" :class="{ active: education }" @click="showEducation()" x-large>Education <v-icon class="ml-3" small>fas fa-graduation-cap</v-icon></v-btn>
                                 </div>

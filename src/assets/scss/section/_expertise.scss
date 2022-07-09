@@ -41,7 +41,7 @@
                             grid-gap: 20px;
 
                             .item {
-                                .name {
+                                h4 {
                                     color: $t-color;
                                 }
                             }
@@ -111,6 +111,37 @@
                                 color: $t-color;
                                 font-weight: 600;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include sm {
+        padding: 70px 0 !important;
+
+        &-tab {
+            .tab-link {
+                margin-bottom: 20px !important;
+
+                .v-btn {
+                    margin: 5px !important;
+                    min-width: 150px !important;
+                }
+            }
+
+            .tab-content {
+                padding: 0 10px !important;
+
+                .skills-content {
+                    .skills-grid {
+                        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)) !important;
+                    }
+                    
+                    .item {
+                        h4 {
+                            font-size: 14px !important;
                         }
                     }
                 }

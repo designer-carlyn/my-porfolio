@@ -59,14 +59,14 @@
         background: $t-color;
         border-radius: 10px 0 0 10px;
         position: fixed;
-        right: -90px;
+        right: -150px;
         top: 0;
         padding: 20px;
         @include flex-item(center);
         flex-direction: column;
         z-index: 999;
         @include transition(0.2s);
-        box-shadow: 0px 0px 40px 0px rgba(255,255,255,0.4);
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.4);
 
         &-item {
             background: $s-light;
@@ -74,7 +74,8 @@
             margin-bottom: 35px;
             height: 50px;
             @include flex-item(center);
-            box-shadow: 0px 0px 8px 0px rgba(255,255,255,0.4);
+            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.4);
+            border: 1px solid $s-color;
 
             .v-icon {
                 color: $s-color;
