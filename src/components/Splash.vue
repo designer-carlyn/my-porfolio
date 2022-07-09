@@ -7,8 +7,12 @@
                     <h1>I'm <span>Carlo Segovia</span></h1>
                     <p>I’m a Web Designer and I’m very passionate and dedicated at my work.</p>
                     <div class="splash-button">
-                        <v-btn class="btn-custom" x-large>Say Hello <v-icon class="ml-3" small>fas fa-location-arrow</v-icon></v-btn>
-                        <v-btn class="btn-custom-light" x-large>Resume <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                        <a href="mailto:carlosegovia5@gmail.com">
+                            <v-btn class="btn-custom" x-large>Say Hello <v-icon class="ml-3" small>fas fa-location-arrow</v-icon></v-btn>
+                        </a>
+                        <a :href="publicPath+'carlo-arlyn-segovia.pdf'" download>
+                            <v-btn class="btn-custom-light" x-large>Resume <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                        </a>
                     </div>
                 </div>
                 <div class="splash-image">
@@ -21,7 +25,13 @@
 
 <script>
     export default {
-        name: 'Splash'
+        name: 'Splash',
+
+        data() {
+            return {
+                publicPath: process.env.BASE_URL
+            }
+        },
     }
 </script>
 

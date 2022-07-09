@@ -33,7 +33,9 @@
                         <div class="about-info">
                             <h1 class="section-title">About Me</h1>
                             <p>With 3 years’ worth of experience as a passionate and dedicated web designer and front-end developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
-                            <v-btn class="btn-custom" x-large>Download CV <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                            <a :href="publicPath+'carlo-arlyn-segovia.pdf'" download>
+                                <v-btn class="btn-custom" x-large>Download CV <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                            </a>
                         </div>
                     </v-col>
                 </v-row>
@@ -45,6 +47,12 @@
 <script>
     export default {
         name: 'About',
+
+        data() {
+            return {
+                publicPath: process.env.BASE_URL
+            }
+        },
     }
 </script>
 

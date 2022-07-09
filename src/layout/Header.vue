@@ -23,7 +23,9 @@
                     </a>
                 </div>
                 <div class="header-button">
-                    <v-btn class="btn-custom" x-large>Resume <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                    <a :href="publicPath+'carlo-arlyn-segovia.pdf'" download>
+                        <v-btn class="btn-custom" x-large>Resume <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
+                    </a>
                 </div>
             </div>
         </v-container>
@@ -31,9 +33,15 @@
 </template>
 
 <script>
-export default {
-    name: 'Header'
-}
+    export default {
+        name: 'Header',
+
+        data() {
+            return {
+                publicPath: process.env.BASE_URL
+            }
+        },
+    }
 </script>
 
 <style lang="scss" scoped>

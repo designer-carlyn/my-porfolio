@@ -6,18 +6,21 @@
                     <img src="@/assets/image/logo_footer.png" alt="">
                 </div>
                 <div class="footer-nav">
-                    <router-link to="#">
+                    <a href="#splash" v-smooth-scroll>
                         <div class="nav-item">HOME</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#about" v-smooth-scroll>
                         <div class="nav-item">ABOUT</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#expertise" v-smooth-scroll>
+                        <div class="nav-item">EXPERTISE</div>
+                    </a>
+                    <a href="#portfolio" v-smooth-scroll>
                         <div class="nav-item">PORTFOLIO</div>
-                    </router-link>
-                    <router-link to="#">
+                    </a>
+                    <a href="#contact" v-smooth-scroll>
                         <div class="nav-item">CONTACT</div>
-                    </router-link>
+                    </a>
                 </div>
                 <div class="footer-trademark">
                     <h4>© 2022 Carlo Segovia</h4>
