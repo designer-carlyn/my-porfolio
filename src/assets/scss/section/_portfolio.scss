@@ -9,17 +9,21 @@
         position: relative;
         
         .swiper-container {
-            padding: 5px 10px 10px;
+            padding: 10px;
+
+            .swiper-slide {
+                opacity: 0.6;
+            }
 
             .slide-container {
                 overflow: hidden;
                 border-radius: $border-radius;
-                box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+                transform: scale(0.9);
 
                 .slide-image {
                     border-radius: $border-radius;
                     position: relative;
-                    cursor: pointer;
+                    @include transition(0.2s);
 
                     img {
                         width: 100%;
@@ -64,12 +68,23 @@
                             }
                         }
                     }
+                }
+            }
 
-                    &:hover {
-                        .slide-action {
-                            transform: scale(1);
-                            @include transition(0.2s);
-                        }
+            .swiper-slide-active {
+                opacity: 1;
+                cursor: pointer;
+
+                .slide-container {
+                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+                    transform: scale(1);
+                    @include transition(0.2s);
+                }
+
+                &:hover {
+                    .slide-action {
+                        transform: scale(1);
+                        @include transition(0.2s);
                     }
                 }
             }
