@@ -3,12 +3,12 @@
         <v-container>
             <div class="portfolio__content">
                 <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
-                <h1 class="section-title" data-aos="fade-up" data-aos-duration="800">Look at my <br> recent projects</h1>
+                <h1 class="section-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">Look at my <br> recent projects</h1>
             </div>
         </v-container>
         <div class="container--fluid">
             <div class="portfolio-slider">
-                <div class="swiper-container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+                <div class="swiper-container" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide" v-for="(item, i) in projectItem" :key="i">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="navigation" data-aos="flip-up" data-aos-duration="800" data-aos-delay="300">
+                <div class="navigation" data-aos="flip-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="navigation-button navigation-prev-project">
                         <v-icon>fas fa-arrow-left</v-icon>
                     </div>
