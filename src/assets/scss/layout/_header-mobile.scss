@@ -105,6 +105,7 @@
         height: 100%;
         width: 100%;
         transform: scale(0);
+        backdrop-filter: blur(5px);
         @include transition(0.2s);
 
         &.active {
