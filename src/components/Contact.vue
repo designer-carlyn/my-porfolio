@@ -10,7 +10,7 @@
                         </div>
                         <div class="content">
                             <h4>Call me now</h4>
-                            <h3>+6395 847 6365</h3>
+                            <h3>+639958476365</h3>
                         </div>
                     </div>
                     <div class="info-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">
