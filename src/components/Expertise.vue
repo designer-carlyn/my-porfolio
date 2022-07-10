@@ -5,19 +5,19 @@
                 <v-row>
                     <v-col class="d-flex align-center" cols="12" xl="5" lg="5" md="5" sm="12" xs="12">
                         <div class="expertise-info">
-                            <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">My skills <br> is my power</h1>
-                            <p data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">I have the knowledge in various tools and frameworks necessary to create a sublime and admirable website just for you. I see to it that my standards are levelled with yours, and I make it possible to make your desired looks become a reality.</p>
+                            <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">My skills <br> is my power</h1>
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">I have the knowledge in various tools and frameworks necessary to create a sublime and admirable website just for you. I see to it that my standards are levelled with yours, and I make it possible to make your desired looks become a reality.</p>
                         </div>
                     </v-col>
                     <v-col cols="12" xl="7" lg="7" md="7" sm="12" xs="12">
                         <div class="expertise-content">
                             <div class="expertise-tab">
-                                <div class="tab-link" data-aos="flip-up" data-aos-duration="600">
+                                <div class="tab-link" data-aos="flip-up" data-aos-duration="800" data-aos-delay="600">
                                     <v-btn v-model="skills" class="btn-custom-light" :class="{ active: skills }" @click="showSkills()" x-large>Expertise <v-icon class="ml-3" small>fas fa-code</v-icon></v-btn>
                                     <v-btn v-model="experience" class="btn-custom-light" :class="{ active: experience }" @click="showExperience()" x-large>Experience <v-icon class="ml-3" small>fas fa-briefcase</v-icon></v-btn>
                                     <v-btn v-model="education" class="btn-custom-light" :class="{ active: education }" @click="showEducation()" x-large>Education <v-icon class="ml-3" small>fas fa-graduation-cap</v-icon></v-btn>
                                 </div>
-                                <div class="tab-content" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+                                <div class="tab-content" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
                                     <v-expand-transition>
                                         <div class="skills-content" v-if="skills" transition="scroll-x-transition">
                                             <div class="skills-grid">

@@ -14,6 +14,7 @@ Vue.use(CoolLightBox)
 Vue.use(VueSmoothScroll, {
   duration: 800,
   offset: -75,
+  // anchorPlacement: 'center-bottom',
 })
 // Vue.use(AOS)
 AOS.init();

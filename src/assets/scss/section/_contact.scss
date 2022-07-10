@@ -61,6 +61,7 @@
     }
 
     @include sm {
+        padding: 120px 0 !important;
         &__form {
             padding: 0 !important;
             box-shadow: none !important;
@@ -95,6 +96,10 @@
                     width: 150px;
                 }
             }
+        }
+
+        &:before {
+            display: none;
         }
     }
 }
