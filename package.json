@@ -5,12 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "core-js": "^3.8.3",
+    "express": "^4.18.1",
     "mobile-device-detect": "^0.4.3",
+    "serve-static": "^1.15.0",
     "swiper": "^6.8.4",
     "vue": "^2.6.14",
     "vue-cool-lightbox": "^2.7.5",
