@@ -3,6 +3,9 @@ module.exports = defineConfig({
   transpileDependencies: [
     'vuetify'
   ],
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/my-porfolio/'
+    : '/',
   lintOnSave: false,
   css: {
     loaderOptions: {
