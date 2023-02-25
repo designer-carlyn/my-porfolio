@@ -105,11 +105,6 @@
                     hasDemo: false,
                 },
                 {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup7_eZwRLsUoX.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
                     image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup8_ksuhRmNKb.webp',
                     demoLink: '',
                     hasDemo: false,
