@@ -130,7 +130,6 @@
                     'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup4_Za4KO5em9.webp',
                     'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup5_MKK0U8rkU.webp',
                     'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup6_J_X8IPz60.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup7_eZwRLsUoX.webp',
                     'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup8_ksuhRmNKb.webp',
                     'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_7Vpxeu1I0.webp',
                 ],
