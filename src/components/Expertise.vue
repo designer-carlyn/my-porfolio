@@ -147,7 +147,7 @@
                 educationItem: [{
                     date: '2014 - 2018',
                     school: 'STI College Sta. Maria, Bulacan',
-                    course: 'B.S in Information Technology'
+                    course: 'Bachelor of Science in Information Technology'
                 },]
             }
         }, 
