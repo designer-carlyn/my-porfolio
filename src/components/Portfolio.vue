@@ -2,160 +2,84 @@
     <div class="portfolio" id="portfolio">
         <v-container>
             <div class="portfolio__content">
-                <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
+                <!-- <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox> -->
                 <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Look at my <br> recent projects</h1>
             </div>
         </v-container>
-        <div class="container--fluid">
-            <div class="portfolio-slider">
-                <div class="swiper-container" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide" v-for="(item, i) in projectItem" :key="i">
-                            <div class="slide-container">
-                                <div class="slide-image">
-                                    <img :src="item.image" alt="">
-
-                                    <div class="slide-action">
-                                        <router-link :to="item.demoLink" v-if="item.hasDemo">
-                                            <v-btn x-large><v-icon>fas fa-external-link-alt</v-icon></v-btn>
-                                        </router-link>
-                                        <v-btn x-large @click="index = i"><v-icon>fas fa-eye</v-icon></v-btn>
-                                    </div>
-                                </div>
-                            </div>
+        <v-container>
+            <div class="portfolio-list">
+                <div class="list-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="item-image">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/notification_page_2yEcQIrl1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678068889281" alt="Notifications page">
+                    </div>
+                    <div class="item-info">
+                        <div class="info-title">Notifications page</div>
+                        <div class="info-tech">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="navigation" data-aos="flip-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="navigation-button navigation-prev-project">
-                        <v-icon>fas fa-arrow-left</v-icon>
+                    <div class="item-bottom">
+                        <v-list-item href="https://cs-notification-page-solution.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/notification-page" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
                     </div>
-                    <div class="navigation-button navigation-next-project">
-                        <v-icon>fas fa-arrow-right</v-icon>
+                </div>
+                <div class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="item-image">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/tip-calculator-app_TwTR5hjoh2.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678074114702" alt="Tip Calculator App">
+                    </div>
+                    <div class="item-info">
+                        <div class="info-title">Tip Calculator App</div>
+                        <div class="info-tech">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <v-list-item href="https://cs-tip-calculator.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/tip-calculator-app" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
+                    </div>
+                </div>
+                <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                    <div class="item-image">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/url-shortening-link_zlomdqUydS.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678074115351" alt="URL shortening API landing page">
+                    </div>
+                    <div class="item-info">
+                        <div class="info-title">URL shortening API landing page</div>
+                        <div class="info-tech">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <v-list-item href="https://cs-url-shortening-link.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/url-shortening-link" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
                     </div>
                 </div>
             </div>
-        </div>
+        </v-container>
     </div>
 </template>
 
 <script>
-    import Swiper , { Autoplay, Navigation } from 'swiper';
-    import 'swiper/swiper-bundle.css'
-	Swiper.use([Autoplay, Navigation]);
-
     export default {
         name: 'Portfolio',
 
-        components: {
-            Swiper,
-        },
-
         data() {
             return {
-                projectItem: [{
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/shop_online_store_07X_i-AfJ.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/cikay_blog_hXNI1Zjlj.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard1_57LcfxmCG.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/my_portfolio_7BRz0QrZ7.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup1_T9NQbd5jU.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup2_ALjCdgCU1.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup3_ofHXLQ21Y.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup4_Za4KO5em9.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup5_MKK0U8rkU.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup6_J_X8IPz60.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup8_ksuhRmNKb.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },
-                {
-                    image: 'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_7Vpxeu1I0.webp',
-                    demoLink: '',
-                    hasDemo: false,
-                },],
-                items: [
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/shop_online_store_07X_i-AfJ.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/cikay_blog_hXNI1Zjlj.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard1_57LcfxmCG.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/my_portfolio_7BRz0QrZ7.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup1_T9NQbd5jU.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup2_ALjCdgCU1.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup3_ofHXLQ21Y.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup4_Za4KO5em9.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup5_MKK0U8rkU.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup6_J_X8IPz60.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/mockup8_ksuhRmNKb.webp',
-                    'https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/dashboard2_7Vpxeu1I0.webp',
-                ],
-                index: null,
+                
             }
         },
-
-        mounted() {
-            new Swiper('.swiper-container', {
-				modules: [Navigation],
-                slidesPerView: 3,
-                spaceBetween: 0,
-                centeredSlides: true,
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                },
-				navigation: {
-					nextEl: '.navigation-next-project',
-					prevEl: '.navigation-prev-project',
-				},
-                breakpoints: {
-                        1280: {
-                            slidesPerView: 3,
-                        },
-                        320: {
-                            slidesPerView: 1,
-                        },
-                    }
-			},);
-        }
     }
 </script>
 

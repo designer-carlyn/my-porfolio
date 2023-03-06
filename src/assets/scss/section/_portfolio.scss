@@ -1,154 +1,124 @@
 @use "../utils/_index.scss" as *;
 
 .portfolio {
-    background: #f4f4f4;
-    padding: 120px 0;
+  background: #f4f4f4;
+  padding: 120px 0;
 
-    &-slider {
-        margin-top: 70px;
-        position: relative;
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+
+    .list-item {
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: $c-white;
+      box-shadow: 0px 0px 13px -6px rgba(0,0,0,0.1);
+
+      .item-image {
+        overflow: hidden;
+        display: flex;
+
+        img {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          object-position: top;
+          cursor: pointer;
+          @include transition(0.2s);
+
+          &:hover {
+            transform: scale(1.05);
+            @include transition(0.2s);
+          }
+        }
+      }
+
+      .item-info {
+        padding: 15px;
+
+        .info-title {
+          font-size: 20px;
+          font-weight: 700;
+          color: $h-text;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .info-tech {
+          ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            grid-gap: 10px;
+
+            li {
+              font-weight: 600;
+              font-size: 16px;
+              margin-top: 10px;
+
+              &:nth-child(1) {
+                color: #6ABECD;
+              }
+
+              &:nth-child(2) {
+                color: #3E54A3;
+              }
+
+              &:nth-child(3) {
+                color: #CF6390;
+              }
+
+              &:nth-child(4) {
+                color: #C8DA42;
+              }
+            }
+          }
+        }
+      }
+
+      .item-bottom {
+        display: flex;
+        grid-gap: 10px;
+        padding: 10px 15px 15px;
         
-        .swiper-container {
-            padding: 10px;
 
-            .swiper-slide {
-                opacity: 0.6;
+        .v-list-item {
+          justify-content: center;
+          padding: 0;
+
+          &:hover {
+            &::before {
+              opacity: 0;
             }
-
-            .slide-container {
-                overflow: hidden;
-                border-radius: $border-radius;
-                transform: scale(0.9);
-
-                .slide-image {
-                    border-radius: $border-radius;
-                    position: relative;
-                    @include transition(0.2s);
-
-                    img {
-                        width: 100%;
-                        border-radius: $border-radius;
-                        display: flex;
-                    }
-
-                    .slide-action {
-                        position: absolute;
-                        background: rgba(0,0,0,0.6);
-                        z-index: 999;
-                        height: 100%;
-                        width: 100%;
-                        top: 0;
-                        @include flex-item(center);
-                        transform: scale(0);
-                        @include transition(0.15s);
-
-                        a {
-                            text-decoration: none;
-                        }
-
-                        .v-btn {
-                            border-radius: 50px;
-                            min-width: 50px !important;
-                            height: 50px !important;
-                            padding: 10px;
-                            margin: 0 20px;
-                            background: $s-light;
-                            border: 1px solid $s-color;
-
-                            .v-icon {
-                                color: $s-color;
-                            }
-
-                            &:hover {
-                                background: $s-color;
-
-                                .v-icon {
-                                    color: $c-white;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            .swiper-slide-active {
-                opacity: 1;
-                cursor: pointer;
-
-                .slide-container {
-                    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
-                    transform: scale(1);
-                    @include transition(0.2s);
-                }
-
-                &:hover {
-                    .slide-action {
-                        transform: scale(1);
-                        @include transition(0.2s);
-                    }
-                }
-            }
+          }
         }
 
-        .navigation {
-            @include flex-item(center);
+        .preview-link {
+          background: $p-color;
+          color: $c-white !important;
+          border-radius: 10px;
+          font-weight: 500;
+          min-height: 45px;
+          font-size: 15px;
 
-            &-button {
-                border: 2px solid $s-color;
-                width: 70px;
-                height: 70px;
-                border-radius: 50px;
-                @include flex-item(center);
-                background: transparent;
-                cursor: pointer;
-                margin: 10px;
+          .v-icon {
+            color: $c-white !important;
+            margin-left: 10px;
+          }
 
-                .v-icon {
-                    color: $s-color;
-                    font-size: 20px;
-                }
+          &.preview-site {
+            background-color: $p-color;
+          }
 
-                &:hover {
-                    background: $s-color;
-                    
-                    .v-icon {
-                        color: $c-white;
-                    }
-                }
-
-                &.swiper-button-disabled {
-                    opacity: 0.35;
-
-                    &:hover {
-                        background: transparent;
-                        border: 2px solid $s-color;
-
-                        .v-icon {
-                            color: $s-color;
-                        }
-                    }
-                }
-            }
-
-            &-prev-project {
-                left: -80px;
-            }
-
-            &-next-project {
-                right: -80px;
-            }
+          &.preview-code {
+            background-color: $s-color;
+          }
         }
+      }
     }
-
-    @include sm {
-        padding: 150px 0 !important;
-
-        &-slider {
-            margin-top: 30px !important;
-
-            .swiper-container {
-                min-height: 100% !important;
-            }
-        }
-    }
+  }
 }
