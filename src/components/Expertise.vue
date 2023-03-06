@@ -5,8 +5,8 @@
                 <v-row>
                     <v-col class="d-flex align-center" cols="12" xl="5" lg="5" md="5" sm="12" xs="12">
                         <div class="expertise-info">
-                            <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">My skills <br> is my power</h1>
-                            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">I have the knowledge in various tools and frameworks necessary to create a sublime and admirable website just for you. I see to it that my standards are levelled with yours, and I make it possible to make your desired looks become a reality.</p>
+                            <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">My skills <br> drive growth</h1>
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">I know the tools and frameworks necessary to create a sublime and admirable website just for you. I ensure that my standards are leveled with yours, and I make it possible to make your desired looks become a reality.</p>
                         </div>
                     </v-col>
                     <v-col cols="12" xl="7" lg="7" md="7" sm="12" xs="12">

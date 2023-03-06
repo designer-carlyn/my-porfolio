@@ -3,9 +3,9 @@
         <v-container>
             <div class="splash-content">
                 <div class="splash-info">
-                    <h1 class="mb-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Hey There,</h1>
+                    <h1 class="mb-0" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Hi!</h1>
                     <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">I'm <span>Carlo Segovia</span></h1>
-                    <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">I’m a Web Designer and I’m very passionate and dedicated at my work.</p>
+                    <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="600">I am a front-end web developer and web designer.</p>
                     <div class="splash-button">
                         <a href="mailto:carlosegovia5@gmail.com">
                             <v-btn class="btn-custom" x-large data-aos="flip-up" data-aos-duration="800" data-aos-delay="800">Say Hello <v-icon class="ml-3" small>fas fa-location-arrow</v-icon></v-btn>
