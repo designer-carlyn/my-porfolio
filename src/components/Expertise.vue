@@ -102,6 +102,10 @@
                     name: 'SASS'
                 },
                 {
+                    icon: require('@/assets/image/icons/reactjs.png'),
+                    name: 'ReactJS'
+                },
+                {
                     icon: require('@/assets/image/icons/vuejs.png'),
                     name: 'VueJS'
                 },
@@ -120,6 +124,10 @@
                 {
                     icon: require('@/assets/image/icons/bootstrap.png'),
                     name: 'Bootstrap'
+                },
+                {
+                    icon: require('@/assets/image/icons/mui.png'),
+                    name: 'MUI'
                 },],
                 experienceItem: [{
                     date: '2022 (Feb) - Present',
