@@ -31,7 +31,7 @@
                     <v-col class="d-flex align-center" cols="12" xl="6" lg="6" md="6" sm="12" xs="12">
                         <div class="about-info">
                             <h1 class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Introduction</h1>
-                            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">With more than 4 years experience as a passionate and dedicated web designer and front-end developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
+                            <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">With more than 4 years of experience as a passionate and dedicated web designer and front-end developer, I have learned how to skillfully use tools and software to create designs. I am also proficient in using HTML, CSS, and Javascript when creating websites, and I use Javascript Frameworks such as VueJs and ReactJs for efficiency. I enjoy every step of the design process, from discussion and collaboration to concept and execution, but I find the most satisfaction in seeing the finished product do everything for you that it was created to do.</p>
                             <a :href="publicPath+'carlo-arlyn-segovia.pdf'" download>
                                 <v-btn class="btn-custom" x-large data-aos="flip-up" data-aos-duration="800" data-aos-delay="800">Download CV <v-icon class="ml-3" small>fas fa-download</v-icon></v-btn>
                             </a>

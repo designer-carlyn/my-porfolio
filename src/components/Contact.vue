@@ -2,7 +2,7 @@
     <div class="contact" id="contact">
         <v-container>
             <div class="contact__form">
-                <div class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Let's keep <br> in touch</div>
+                <div class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Let's work <br> together</div>
                 <div class="contact-info">
                     <div class="info-item" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
                         <div class="icon">
