@@ -8,12 +8,12 @@
         </v-container>
         <v-container>
             <div class="portfolio-list">
-                <div class="list-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
                     <div class="item-image">
-                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/notification_page_2yEcQIrl1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678068889281" alt="Notifications page">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/password-generator_Bi3BpNbYy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678516074438" alt="Password Generator App">
                     </div>
                     <div class="item-info">
-                        <div class="info-title">Notifications page</div>
+                        <div class="info-title">Password Generator App</div>
                         <div class="info-tech">
                             <ul>
                                 <li>HTML</li>
@@ -23,8 +23,28 @@
                         </div>
                     </div>
                     <div class="item-bottom">
-                        <v-list-item href="https://cs-notification-page-solution.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
-                        <v-list-item href="https://github.com/designer-carlyn/notification-page" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
+                        <v-list-item href="https://cs-password-generator.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/password-generator-app" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
+                    </div>
+                </div>
+                <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                    <div class="item-image">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/url-shortening-link_zlomdqUydS.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678074115351" alt="URL shortening API landing page">
+                    </div>
+                    <div class="item-info">
+                        <div class="info-title">URL shortening API landing page</div>
+                        <div class="info-tech">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                                <li>API</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <v-list-item href="https://cs-url-shortening-link.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/url-shortening-link" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
                     </div>
                 </div>
                 <div class="list-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
@@ -46,24 +66,23 @@
                         <v-list-item href="https://github.com/designer-carlyn/tip-calculator-app" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
                     </div>
                 </div>
-                <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                <div class="list-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="item-image">
-                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/url-shortening-link_zlomdqUydS.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678074115351" alt="URL shortening API landing page">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/notification_page_2yEcQIrl1.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1678068889281" alt="Notifications page">
                     </div>
                     <div class="item-info">
-                        <div class="info-title">URL shortening API landing page</div>
+                        <div class="info-title">Notifications page</div>
                         <div class="info-tech">
                             <ul>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JS</li>
-                                <li>API</li>
                             </ul>
                         </div>
                     </div>
                     <div class="item-bottom">
-                        <v-list-item href="https://cs-url-shortening-link.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
-                        <v-list-item href="https://github.com/designer-carlyn/url-shortening-link" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
+                        <v-list-item href="https://cs-notification-page-solution.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/notification-page" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
                     </div>
                 </div>
             </div>
