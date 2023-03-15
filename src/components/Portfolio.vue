@@ -10,7 +10,26 @@
             <div class="portfolio-list">
                 <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
                     <div class="item-image">
-                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/password-generator_Bi3BpNbYy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1678516074438" alt="Password Generator App">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/todo_app_KPFn8Kj0O.webp?updatedAt=1678863890733" alt="Todo App">
+                    </div>
+                    <div class="item-info">
+                        <div class="info-title">Todo App</div>
+                        <div class="info-tech">
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-bottom">
+                        <v-list-item href="https://cs-todo-app.netlify.app/" :ripple="false" target="_blank" class="preview-link preview-site">Preview Site <v-icon small>fas fa-external-link-alt</v-icon></v-list-item>
+                        <v-list-item href="https://github.com/designer-carlyn/todo-app" target="_blank" class="preview-link  preview-code">Source Code <v-icon small>fas fa-code</v-icon></v-list-item>
+                    </div>
+                </div>
+                <div class="list-item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
+                    <div class="item-image">
+                        <img src="https://ik.imagekit.io/csdesigner/my_portfolio/recent_works/password-generator_NHud31vNn.webp?updatedAt=1678863890907" alt="Password Generator App">
                     </div>
                     <div class="item-info">
                         <div class="info-title">Password Generator App</div>
