@@ -13,7 +13,7 @@
                         <img :src="item.imageSrc" :alt="item.imageAlt">
                     </div>
                     <div class="item-info">
-                        <div class="info-title">Rest Countries API</div>
+                        <div class="info-title">{{item.title}}</div>
                         <div class="info-tech">
                             <ul>
                                 <li v-for="(items, index) in item.tech" :key="index">{{items}}</li>
